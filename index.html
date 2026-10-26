@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michaliszyn System | Atendente IA para WhatsApp</title>
+  <meta name="description" content="Landing page do Michaliszyn System, um Atendente IA para WhatsApp criado para barbearias e pequenos negócios venderem, responderem e agendarem melhor." />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <a class="brand" href="#inicio" aria-label="Voltar para o início">
+          <span class="logo">MS</span>
+          <span>Michaliszyn System</span>
+        </a>
+        <div class="links" aria-label="Navegação principal">
+          <a href="#produto">Produto</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#fundador">Fundador</a>
+          <a href="#planos">Planos</a>
+          <button class="theme-btn" id="themeBtn" type="button" aria-label="Alternar tema">
+            <span class="theme-icon" aria-hidden="true"></span>
+            <span class="theme-label">Tema escuro</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="inicio">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> Atendente IA para WhatsApp</div>
+          <h1>
+            <span class="gradient-text">Michaliszyn System</span>
+            para atendimento inteligente.
+          </h1>
+          <p class="lead">
+            Atendente IA para WhatsApp que responde clientes, consulta horários e organiza agendamentos.
+            Um núcleo inteligente para barbearias e pequenos negócios não perderem mensagens importantes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projeto">
+              <span>Ver demonstração</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn" href="#planos">
+              <span>Conhecer planos</span>
+            </a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-mini">
+              <strong data-counter="24">0</strong>
+              <span>horas de presença digital</span>
+            </div>
+            <div class="stat-mini">
+              <strong>IA</strong>
+              <span>respostas com regra de negócio</span>
+            </div>
+            <div class="stat-mini">
+              <strong>BI</strong>
+              <span>dados para acompanhar demanda</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="visual-card reveal" aria-label="Painel visual do Michaliszyn System">
+          <div class="screen-top">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="ai-status"><span></span> Sistema online</div>
+          </div>
+          <div class="dashboard">
+            <div class="scan-panel">
+              <div>
+                <small>Núcleo operacional</small>
+                <strong>Mensagens + Horários + Clientes</strong>
+              </div>
+            </div>
+            <div class="demo-panel" aria-label="Demonstração simulada do Atendente IA">
+              <div class="demo-header">
+                <div>
+                  <small>Demo interativa</small>
+                  <strong>Teste o atendente no WhatsApp</strong>
+                </div>
+                <span class="demo-live">online</span>
+              </div>
+
+              <div class="chat-window demo-chat" id="demoMessages" role="log" aria-live="polite" aria-label="Mensagens da demonstração">
+              </div>
+
+              <div class="quick-replies" id="demoOptions" aria-label="Opções da demonstração">
+              </div>
+            </div>
+
+            <div class="booking-status" id="bookingStatus">
+              <span id="bookingStatusTitle">Demo pronta</span>
+              <strong id="bookingTime">Escolha uma opção para iniciar a simulação.</strong>
+              <small id="bookingState"></small>
+            </div>
+            <div class="metric-grid">
+              <div class="metric">
+                <small>Agendamentos simulados</small>
+                <strong data-counter="38">0</strong>
+                <div class="bar"><span style="--w: 82%"></span></div>
+              </div>
+              <div class="metric">
+                <small>Dúvidas respondidas</small>
+                <strong data-counter="96">0</strong>
+                <div class="bar"><span style="--w: 96%"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badge">
+            <span>Objetivo do produto</span>
+            <strong>Transformar conversa perdida em atendimento organizado.</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section id="produto">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="section-kicker">Produto</div>
+            <h2>Um sistema para negócios que não podem perder mensagem.</h2>
+            <p>
+              A primeira versão é focada em barbearias, mas a base serve para clínicas,
+              lojas e pequenos negócios que precisam responder rápido sem depender do dono
+              olhando o celular o tempo todo.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H10l-4.5 4v-4A2.5 2.5 0 0 1 4 13.5v-7Z" /></svg>
+              </div>
+              <h3>Atendimento automático</h3>
+              <p>
+                Informa preços, serviços, endereço, horário de funcionamento e dúvidas frequentes
+                com uma conversa mais natural.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v4M17 3v4M4.5 9h15M6.5 5h11A2.5 2.5 0 0 1 20 7.5v10A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-10A2.5 2.5 0 0 1 6.5 5Z" /><path d="m8 14 2.2 2.2L16 11" /></svg>
+              </div>
+              <h3>Agenda organizada</h3>
+              <p>
+                Pergunta preferências, consulta opções e guia o cliente até uma confirmação clara,
+                reduzindo idas e vindas.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V5M5 19h15M9 16v-5M13 16V8M17 16v-8" /></svg>
+              </div>
+              <h3>Dados do negócio</h3>
+              <p>
+                Ajuda o dono a enxergar volume de dúvidas, horários mais procurados e oportunidades
+                para melhorar atendimento e vendas.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M7 16h10" /><path d="M8 5.5 5 8l3 2.5M16 13.5l3 2.5-3 2.5" /></svg>
+              </div>
+              <h3>Menos mensagens perdidas</h3>
+              <p>
+                Mantém o atendimento ativo quando o dono está ocupado, reduzindo esquecimentos,
+                atrasos e oportunidades perdidas no WhatsApp.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="section-kicker">Como funciona</div>
+            <h2>Do primeiro “oi” ao agendamento confirmado.</h2>
+            <p>
+              O fluxo visual abaixo mostra a lógica comercial do Michaliszyn System:
+              menos improviso no WhatsApp, mais processo e previsibilidade.
+            </p>
+          </div>
+
+          <div class="flow-grid">
+            <article class="flow-step reveal">
+              <span>01</span>
+              <h3>Cliente chama no WhatsApp</h3>
+              <p>O contato chega pelo WhatsApp com dúvidas sobre serviço, preço ou horário.</p>
+            </article>
+            <article class="flow-step reveal">
+              <span>02</span>
+              <h3>IA entende a mensagem</h3>
+              <p>O sistema identifica se é pergunta, agendamento, alteração ou informação básica.</p>
+            </article>
+            <article class="flow-step reveal">
+              <span>03</span>
+              <h3>Sistema consulta horários</h3>
+              <p>A conversa segue para opções disponíveis, respeitando regras do negócio.</p>
+            </article>
+            <article class="flow-step reveal">
+              <span>04</span>
+              <h3>Cliente confirma</h3>
+              <p>O cliente recebe uma confirmação objetiva com nome, serviço e horário.</p>
+            </article>
+            <article class="flow-step reveal">
+              <span>05</span>
+              <h3>Dono acompanha tudo</h3>
+              <p>O negócio ganha registro, visão de demanda e uma rotina mais organizada.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projeto">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="section-kicker">Experiência</div>
+            <h2>WhatsApp com aparência familiar, sistema com inteligência por trás.</h2>
+            <p>
+              O produto precisa parecer simples para o cliente final. Por trás da conversa,
+              a lógica organiza dados, regras e próximos passos.
+            </p>
+          </div>
+
+          <div class="project-panel">
+            <div class="project-copy reveal">
+              <h3>Mais que responder mensagens: organizar o atendimento.</h3>
+              <p>
+                O projeto está em fase de protótipo. A ideia é evoluir com uma base sólida:
+                interpretação de mensagens, regras de negócio, controle de agenda e respostas
+                naturais para clientes.
+              </p>
+              <div class="feature-list">
+                <div class="feature"><b>01</b><span>Responder perguntas frequentes sobre preços, serviços, horários e localização.</span></div>
+                <div class="feature"><b>02</b><span>Consultar disponibilidade e conduzir o cliente até um agendamento claro.</span></div>
+                <div class="feature"><b>03</b><span>Registrar informações importantes para reduzir retrabalho e confusão.</span></div>
+                <div class="feature"><b>04</b><span>Gerar indicadores para entender dúvidas, cancelamentos e oportunidades de melhoria.</span></div>
+              </div>
+            </div>
+
+            <div class="phone reveal" aria-label="Mockup de conversa no WhatsApp">
+              <div class="phone-screen">
+                <div class="phone-header">
+                  <div class="wa-logo">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.5 4.5 20l.8-3.7A8 8 0 1 1 7 17.5Z" /><path d="M8.5 9.2c.2 3 3 5.5 5.8 6.1l1.2-1.5-1.7-1.1-.9.8c-1.2-.5-2.1-1.4-2.6-2.6l.8-.9L10 8.3 8.5 9.2Z" /></svg>
+                  </div>
+                  <div>
+                    <h4>Barbearia Prime</h4>
+                    <small><span></span> online agora</small>
+                  </div>
+                </div>
+                <div class="phone-chat">
+                  <div class="phone-msg">Oi, tem horário hoje depois das 16h?<small>14:08</small></div>
+                  <div class="phone-msg ai">Tenho sim. Encontrei 16h30 e 18h. Qual prefere?<small>14:08</small></div>
+                  <div class="phone-msg">16h30.<small>14:09</small></div>
+                  <div class="phone-msg ai">Perfeito. Qual seu nome para confirmar o agendamento?<small>14:09</small></div>
+                  <div class="phone-msg">Lucas Henrique.<small>14:10</small></div>
+                  <div class="appointment-card">
+                    <span>Agendamento confirmado</span>
+                    <strong>Lucas · Corte masculino · Hoje 16h30</strong>
+                  </div>
+                  <div class="typing-row"><span></span><span></span><span></span></div>
+                </div>
+                <div class="phone-input">
+                  <span>Mensagem</span>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fundador">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="section-kicker">Criador e fundador</div>
+            <h2>Construído por Marcos Eduardo Michaliszyn.</h2>
+            <p>
+              Criado por Marcos Eduardo Michaliszyn, estudante e criador em evolução,
+              com foco em IA, dados, automação e produtos digitais.
+            </p>
+          </div>
+
+          <div class="about-layout">
+            <div class="profile-panel reveal">
+              <div class="avatar">ME</div>
+              <h3>Marcos Eduardo Michaliszyn</h3>
+              <p>
+                Estudante focado em crescer na área de tecnologia, com interesse em Engenharia de Software,
+                Inteligência Artificial e análise de dados. A proposta é aprender na prática, criar projetos,
+                testar ideias e transformar conhecimento em algo que gere valor real.
+              </p>
+              <div class="chips">
+                <span class="chip">Power BI</span>
+                <span class="chip">Python</span>
+                <span class="chip">Automação</span>
+                <span class="chip">IA aplicada</span>
+                <span class="chip">Projetos reais</span>
+              </div>
+            </div>
+
+            <div class="timeline reveal">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h4>Dados e dashboards</h4>
+                  <p>
+                    Experiência criando relatórios, painéis e automações com foco em produtividade,
+                    visualização de indicadores e redução de tarefas repetitivas.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h4>Programação como ferramenta</h4>
+                  <p>
+                    Uso de Python, lógica e integrações para criar protótipos, validar ideias e aproximar projetos
+                    de uma aplicação prática no mundo real.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h4>Produto com IA</h4>
+                  <p>
+                    O foco atual é transformar um atendente inteligente em produto: primeiro funcional,
+                    depois confiável, vendável e escalável.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="section-kicker">Planos</div>
+            <h2>Planos para cada fase do seu negócio</h2>
+            <p>
+              Comece com uma automação simples ou evolua para um assistente com IA, painel e dashboards profissionais.
+            </p>
+          </div>
+
+          <div class="plan-grid">
+            <article class="plan reveal">
+              <span class="tag">Entrada</span>
+              <h3>Essencial</h3>
+              <div class="price">R$ 99<span>/mês</span></div>
+              <p class="plan-summary">Automação simples para perguntas frequentes.</p>
+              <ul>
+                <li>Fluxo sem IA</li>
+                <li>Respostas sobre serviços e preços</li>
+                <li>Horários de funcionamento</li>
+                <li>Atendimento inicial automatizado</li>
+                <li>Painel simples</li>
+              </ul>
+              <a class="plan-action" href="#inicio">Começar pelo Essencial</a>
+            </article>
+
+            <article class="plan featured reveal">
+              <span class="tag">Mais vendido</span>
+              <h3>Inteligente</h3>
+              <div class="price">R$ 299<span>/mês</span></div>
+              <p class="plan-summary">IA controlada para entender mensagens e conduzir atendimentos.</p>
+              <ul>
+                <li>IA para interpretar mensagens</li>
+                <li>Respostas seguras controladas pelo sistema</li>
+                <li>FAQ dinâmico</li>
+                <li>Consulta de horários</li>
+                <li>Agendamento ou pré-agendamento</li>
+                <li>Painel com métricas básicas</li>
+              </ul>
+              <a class="plan-action" href="#inicio">Começar pelo Inteligente</a>
+            </article>
+
+            <article class="plan reveal">
+              <span class="tag">Avançado</span>
+              <h3>Inteligente Pro</h3>
+              <div class="price">R$ 599<span>/mês</span></div>
+              <p class="plan-summary">Para negócios que precisam de mais precisão e personalização.</p>
+              <ul>
+                <li>IA avançada para mensagens mais complexas</li>
+                <li>Melhor interpretação de intenção</li>
+                <li>Mais personalização do atendimento</li>
+                <li>Histórico e análise de dúvidas</li>
+                <li>Painel avançado</li>
+                <li>Suporte prioritário</li>
+              </ul>
+              <a class="plan-action" href="#inicio">Quero o Pro</a>
+            </article>
+
+            <article class="plan reveal">
+              <span class="tag">Empresas</span>
+              <h3>Empresarial</h3>
+              <div class="price price-from"><small>A partir de</small> R$ 899<span>/mês</span></div>
+              <p class="plan-summary">Atendimento inteligente com gestão, dados e dashboards profissionais.</p>
+              <ul>
+                <li>Assistente completo com IA avançada</li>
+                <li>Dashboard profissional em BI</li>
+                <li>Análise de dúvidas frequentes</li>
+                <li>Indicadores de cancelamento e conversão</li>
+                <li>Relatórios estratégicos</li>
+                <li>Integrações personalizadas</li>
+              </ul>
+              <a class="plan-action" href="#inicio">Solicitar consulta</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="final-cta reveal">
+            <span class="section-kicker">Próximo passo</span>
+            <h2>Um produto pequeno pode virar um sistema forte.</h2>
+            <p>
+              O caminho é construir primeiro uma versão simples e confiável, testar com um negócio real,
+              corrigir falhas e só depois escalar. Visual bonito chama atenção, mas produto bom precisa resolver problema de verdade.
+            </p>
+            <a class="btn primary" href="#inicio">
+              <span>Voltar ao início</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Michaliszyn System · Criado por Marcos Eduardo Michaliszyn para apresentar o Atendente IA.
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/mouse-effects.js"></script>
+  <script src="js/dynamic-cosmic-background.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

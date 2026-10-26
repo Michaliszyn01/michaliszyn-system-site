@@ -1,0 +1,102 @@
+.page {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.container {
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(390px, 0.92fr);
+  gap: 48px;
+  align-items: center;
+  min-height: calc(100svh - 76px);
+  padding: 56px 0 96px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 700px;
+}
+
+section {
+  padding: 82px 0;
+  position: relative;
+}
+
+.section-head {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.project-panel {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.feature-list {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
